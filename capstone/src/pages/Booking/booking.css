@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+.booking-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 50vh; /* Adjusted for a box look */
+  max-width: 860px; /* Maximum width for the container */
+  margin: 175px auto; /* Center the container with margin */
+  padding: 40px; /* Padding inside the container */
+  background: #d0dcee; 
+  border-radius: 20px; /* Rounded corners */
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2); /* Shadow for depth */
+}
+
+.form {
+  width: 100%;
+  background: #fff;
+  padding: 20px;
+  border-radius: 20px; /* Ensures form inherits container's rounded corners */
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Inner shadow for the form */
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Title Styles */
+.session-title {
+  width: 100%; 
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333; /* Dark text for better contrast */
+  font-family: 'Playfair Display', serif; 
+  font-size: 2rem; /* Larger font size */
+  padding-bottom: 8px;
+  border-bottom: 2px solid rgb(34, 34, 34);
+}
+
+/* Form Group & Label Styles */
+.form-group {
+  margin-bottom: 15px;
+  flex: 1 1 200px;
+}
+
+.form-label {
+  margin-bottom: 5px;
+  display: block;
+  color: #555; /* Slightly darker label color for contrast */
+}
+
+/* Input Styles */
+.form-control {
+  width: 100%;
+  padding: 10px;
+  border-radius: 4px;
+  border: 2px solid #ccc; /* Slightly thicker border */
+  margin-bottom: 10px;
+  transition: border-color 0.3s ease-in-out; /* Smooth transition for focus effect */
+}
+
+.form-control:focus {
+  border-color: #fc466b; /* Bright pink focus color */
+}
+
+/* Button Styles */
+.btn-primary {
+  flex: 1 1 100%;
+  padding: 10px;
+  border-radius: 4px;
+  background-color: #199933; /* Vibrant teal background */
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out; /* Smooth background color transition */
+}
+
+.btn-primary:hover {
+  background-color: #7F7FD5; /* Lighter teal on hover */
+}
+
+/* Invalid Input Styles */
+.form-control.is-invalid {
+  border-color: #ff5e57; /* Bright red border for invalid inputs */
+}
+
+.form-control.Feedback.invalid {
+  display: block;
+  width: 100%;
+  margin-top: .25rem;
+  font-size: .875rem;
+  color: #ff5e57; 
+}
+
+.successful-submission{
+  font-family: 'Playfair Display', serif; 
+  font-size: 3rem;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .form-group {
+    flex: 1 1 100%; /* Full width on smaller screens */
+  }
+}
+
+
+
+
+
+
+
+
+
+  

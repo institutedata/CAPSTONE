@@ -1,0 +1,141 @@
+.africa-page-background {
+    position: relative;
+    background-image: url('../../assets/safari.jpg'); 
+    background-size: cover;
+    background-position: center;
+    height: 100vh; 
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; /* Align content to the bottom of the page */
+    align-items: center;
+    overflow: hidden; /* Ensure the blur doesn't overflow */
+  }
+  
+  .africa-page-background::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('../../assets/safari.jpg'); 
+    background-size: cover;
+    background-position: center;
+    filter: blur(2px);
+    z-index: -1; 
+  }
+  
+  .lion {
+    position: absolute;
+    width: 800px;
+    height: 1100px;
+    top: 75%; 
+    left: 52%; 
+    transform: translate(-50%, -50%);
+    z-index: 1;
+  }
+  
+  
+  .africa-header-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 200px); /* Reduce the height by 200px */
+    padding-top: 200px; /* Add padding to push the content down */
+  }
+  
+  
+  .content-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px; 
+  }
+  
+  @keyframes zoomIn {
+    from {
+      transform: scale(1);
+    }
+    to {
+      transform: scale(1.1);
+    }
+  }
+  
+  .africa-header {
+    font-family: "Playfair Display", sans-serif;
+    font-size: 8em;
+    color: white;
+    margin-top: -120px;
+    animation: zoomIn 10s infinite alternate;
+  }
+  
+  
+  .africa-subtitle {
+    font-family: "Roboto", sans-serif;
+    color: rgb(253, 253, 253);
+    font-size: 3em;
+    text-align: center;
+    z-index: 2; 
+    margin-bottom: 90px;
+  }
+  
+  .africa-button {
+    border-radius: 10px;
+    font-family: "Roboto", sans-serif;
+    color: white;
+    font-size: 20px;
+    font-weight: 300;
+    cursor: pointer;
+    width: 200px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid white;
+    z-index: 2; 
+  }
+
+  .pagination-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    color: white;
+    font-size: 1.2em;
+  }
+  
+  .pagination-container .fa-circle-left,
+  .pagination-container .fa-circle-right {
+    font-size: 2em;
+    color: white;
+  }
+  
+  .pagination-container .left-text {
+    margin-right: auto; 
+    text-decoration: none;
+    color: white;
+    font-family: "Playfair Display", sans-serif;
+    font-size: 22px;
+    margin: 0 10px;
+  }
+  
+  .pagination-container .right-text {
+    margin-left: auto; 
+  }
+  
+  .pagination-container span {
+    margin: 0 10px;
+    font-family: "Playfair Display", sans-serif;
+    font-size: 22px;
+  }
+
+  .pagination-container .fa-circle-right {
+    order: 3;
+  }
+  
+
+  
+  
+  

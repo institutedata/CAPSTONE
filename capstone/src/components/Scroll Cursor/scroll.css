@@ -1,0 +1,13 @@
+.custom-cursor {
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    pointer-events: none;
+    z-index: 1000;
+    width: 50px; /* Set the width of your cursor image */
+    height: 50px; /* Set the height of your cursor image */
+    background-image: url('../../assets/scrollCursor.png'); /* Replace 'path_to_your_image.png' with the path to your image */
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  

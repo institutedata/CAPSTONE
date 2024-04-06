@@ -1,0 +1,19 @@
+.icons {
+  display: flex;
+  justify-content: flex-start;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  padding: 40px;
+  padding-left: 60px;
+}
+
+img {
+  width: 20px;
+  height: auto; 
+  margin-right: 15px; 
+}
+
+.icon-home {
+  filter: brightness(0) invert(1); /* Make icons appear white */
+}

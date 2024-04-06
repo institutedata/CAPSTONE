@@ -1,0 +1,168 @@
+.container {
+  position: relative;
+}
+
+.image1 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 300px;
+  z-index: 1;
+  transform: translateY(90%);
+  padding-right: 500px;
+}
+
+.image2 {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  width: 550px;
+  height: 350px;
+  transform: translateY(45%);
+  padding-right: 100px;
+}
+
+.title-font {
+  font-family: 'Playfair Display', sans-serif;
+  color: rgb(113, 111, 111);
+  font-size: 40px;
+}
+
+.orange-italic {
+  font-style: italic;
+  color: orange;
+  font-family: 'Playfair Display', sans-serif;
+  font-size: 50px;
+}
+
+.font-container {
+  position: absolute;
+  top: 50%;
+  left: 8%;
+  transform: translateY(150%);
+  text-align: center;
+  line-height: 2.5rem;
+}
+
+.dictate {
+  margin: auto;
+}
+
+.dictate__text {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.dictate.is-static .dictate__text {
+  visibility: visible;
+  opacity: 1;
+}
+
+.dictate__text-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-180%, 195%);
+  max-width: 420px;
+}
+
+.dictate__animation-text {
+  position: absolute;
+  top: 0;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-wrap: wrap;
+  pointer-events: none;
+}
+
+.dictate.is-static .dictate__animation-text {
+  display: none;
+}
+
+.dictate__animation-text p>span {
+  display: inline-block;
+  overflow: hidden;
+  white-space: pre-wrap;
+  font-family: 'Roboto', sans-serif;
+  color: rgb(113, 111, 111);
+  position: relative;
+  line-height: 1.2;
+  margin-bottom: -.15rem;
+}
+
+.dictate__animation-text p>span>span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200%;
+  height: 100%;
+}
+
+.speaker-button {
+  position: fixed;
+  height: 30px;
+  width: 32px;
+  bottom: 30px;
+  right: 60px;
+  z-index: 2;
+  cursor: pointer;
+  border-radius: 10px;
+  border: 3px solid orange;
+}
+
+.speaker-button:hover {
+  background-color: orange;
+}
+
+@media (max-width: 768px) {
+  .container {
+    position: relative;
+  }
+
+  .image1 {
+    width: 200px;
+    padding-right: 200px;
+  }
+
+  .image2 {
+    width: 300px;
+    height: 200px;
+    padding-right: 50px;
+  }
+
+  .font-container {
+    left: 5%;
+    transform: translateY(150%);
+  }
+
+  .dictate__text-container {
+    transform: translate(-150%, 150%);
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    position: relative;
+  }
+
+  .image1 {
+    width: 150px;
+    padding-right: 100px;
+  }
+
+  .image2 {
+    width: 200px;
+    height: 150px;
+    padding-right: 20px;
+  }
+
+  .font-container {
+    left: 2%;
+    transform: translateY(200%);
+  }
+
+  .dictate__text-container {
+    transform: translate(-120%, 120%);
+  }
+}

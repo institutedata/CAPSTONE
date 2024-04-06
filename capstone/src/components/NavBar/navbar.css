@@ -1,0 +1,100 @@
+body {
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    line-height: 1.5em;
+    font-size: 15px; 
+}
+
+.inner_main_menu {
+    margin: 0 auto;
+    width: 1170px;
+}
+
+.inner_main_menu ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: right;
+}
+
+.inner_main_menu ul li {
+    float: none;
+    display: inline-block;
+    padding-top: 40px;
+}
+
+.inner_main_menu ul li:nth-child(1) {
+    float: left;
+}
+
+.inner_main_menu ul li:nth-child(2) {
+    float: left;
+}
+
+.inner_main_menu ul li a {
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: block;
+    padding: 20px 35px;
+}
+
+.inner_main_menu ul li a:hover {
+    color: orange;
+}
+
+.logo_text {
+    font-family: 'Playfair Display', sans-serif;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding-top: 20px;
+    text-decoration: none;
+}
+
+.logo_subtitle {
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+    font-weight: 400;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    text-decoration: none;
+}
+
+.logo_text:hover {
+    color: orange;
+}
+
+.logo_subtitle:hover {
+    color: orange;
+}
+
+#main_menu {
+    width: 100%;
+    position: fixed; /* or absolute, depending on layout needs */
+    top: 0; /* Align to the top */
+    left: 0; /* Align to the left */
+    background: transparent; /* Ensure transparency */
+    z-index: 1000; /* High enough to be on top of other content */
+}
+
+.logo_area {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%); /* Adjusted for centering */
+    content: "";
+    background: transparent; /* Ensure transparency */
+}
+
+.logo_link {
+    text-decoration: none;
+}
+
+
+
+
+
